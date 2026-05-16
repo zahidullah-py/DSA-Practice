@@ -11,4 +11,17 @@ public class Stack {
         top=-1;
         stack=new int[n];
     }
+    public void push(int item){
+        if (top== max_size-1){
+            System.out.println("overflow");
+            return;
+        }
+        top+=1;
+        stack[top]=item;
+    }
+    public void display(){
+        for (int i=0; i<stack.length; i++){
+            System.out.print(stack[i]+ " ");
+        }
+    }
 }
