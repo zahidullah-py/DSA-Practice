@@ -18,11 +18,28 @@ public class Stack {
             System.out.println("overflow");
             return;
         }
+
         top+=1;
         stack[top]=item;
     }
+    // pop operation on stack
+    public int pop(){
+
+        if (top==-1){
+            System.out.println("underflow");
+            return -1;
+        }
+
+        int item = stack[top];
+        top--;
+
+        return item;
+    }
+
     public void display(){
-        for (int i=0; i<stack.length; i++){
+
+        for (int i=0; i<=top; i++){
+
             System.out.print(stack[i]+ " ");
         }
     }
