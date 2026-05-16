@@ -11,6 +11,8 @@ public class Stack {
         top=-1;
         stack=new int[n];
     }
+
+    //push operation
     public void push(int item){
         if (top== max_size-1){
             System.out.println("overflow");
